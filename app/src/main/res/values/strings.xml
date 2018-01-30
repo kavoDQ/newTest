@@ -1,3 +1,20 @@
 <resources>
     <string name="app_name">newTest</string>
+
+<string-array name="subject">
+<item>餐飲</item>
+<item>交通</item>
+<item>購物</item>
+<item>雜支</item>
+<item>其他</item>
+</string-array>
+    <string-array name="currency">
+        <item>新台幣</item>
+        <item>日幣</item>
+        <item>人民幣</item>
+        <item>韓元</item>
+        <item>美元</item>
+        <item>泰銖</item>
+    </string-array>
+
 </resources>

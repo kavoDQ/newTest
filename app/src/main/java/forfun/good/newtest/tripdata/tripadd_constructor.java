@@ -6,15 +6,15 @@ package forfun.good.newtest.tripdata;
 
 public class tripadd_constructor {
     int id;
-    int date;        //日期
+    String date;        //日期
     int money;          //金額
     String subject;     //項目
     String currency;    //幣別
     String note;        //註記
 
-    public tripadd_constructor(int id,int date,int money,String subject,String currency,String note)
+    public tripadd_constructor(String date,int money,String subject,String currency,String note)
     {
-        this.id = id ;
+        //this.id = id ;
         this.date = date;
         this.money = money;
         this.subject = subject;

@@ -23,8 +23,8 @@ public class tripDB extends SQLiteOpenHelper{
 
     @Override
     public void onCreate(SQLiteDatabase db) {
-        db.execSQL("CREATE TABLE \"trip\" ( `_id` INTEGER NOT NULL PRIMARY KEY, `Title` TEXT, `startdate` TEXT, `enddate` TEXT, `budget` INTEGER )");
-        db.execSQL("CREATE TABLE \"tripdetail\" ( `_id` INTEGER NOT NULL, `money` INTEGER, `_date` INTEGER, `subject` TEXT, `Currency` TEXT, `note` TEXT, PRIMARY KEY(`_id`) )");
+        db.execSQL("CREATE TABLE \"trip\" ( `_id` INTEGER NOT NULL PRIMARY KEY , `Title` TEXT, `startdate` TEXT, `enddate` TEXT, `budget` INTEGER )");
+        db.execSQL("CREATE TABLE \"tripdetail\" ( `_id` INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT, `money` INTEGER, `_date` TEXT, `subject` TEXT, `Currency` TEXT, `note` TEXT )");
     }
 
     @Override

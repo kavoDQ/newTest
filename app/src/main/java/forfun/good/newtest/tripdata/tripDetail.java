@@ -25,7 +25,7 @@ public class tripDetail implements tripDetailDAO {
     @Override
     public boolean add(tripadd_constructor t) {
         ContentValues cv = new ContentValues();
-        cv.put("_id",t.id);
+//        cv.put("_id",t.id); ID 自動生成應該不用+
         cv.put("money",t.money);
         cv.put("_date",t.date);
         cv.put("subject",t.subject);
@@ -41,11 +41,11 @@ public class tripDetail implements tripDetailDAO {
         Cursor c = db.query("tripdetail", new String[]{"_id","money","_date","subject","Currency","note"},null,null,null,null,null);
         if (c.moveToFirst())
         {
-            tripadd_constructor s1 = new tripadd_constructor(c.getInt(0), c.getInt(1), c.getInt(2),c.getString(3),c.getString(4),c.getString(5));
+            tripadd_constructor s1 = new tripadd_constructor(c.getString(0), c.getInt(1), c.getString(2),c.getString(3),c.getString(4));
             mlist.add(s1);
             while(c.moveToNext())
             {
-                tripadd_constructor s = new tripadd_constructor(c.getInt(0), c.getInt(1), c.getInt(2),c.getString(3),c.getString(4),c.getString(5));
+                tripadd_constructor s = new tripadd_constructor(c.getString(0), c.getInt(1), c.getString(2),c.getString(3),c.getString(4));
                 mlist.add(s);
             }
         }
@@ -57,7 +57,7 @@ public class tripDetail implements tripDetailDAO {
         Cursor c = db.query("tripdetail", new String[] {"_id", "money", "_date","subject","Currency","note"}, "_id=?", new String[] {String.valueOf(id)}, null, null, null);
         if (c.moveToFirst())
         {
-            tripadd_constructor s1 = new tripadd_constructor(c.getInt(0), c.getInt(1), c.getInt(2),c.getString(3),c.getString(4),c.getString(5));
+            tripadd_constructor s1 = new tripadd_constructor(c.getString(0), c.getInt(1), c.getString(2),c.getString(3),c.getString(4));
             return s1;
         }
         return null;

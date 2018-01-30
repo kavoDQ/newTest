@@ -3,7 +3,9 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
-      <module fileurl="file://$PROJECT_DIR$/newTest.iml" filepath="$PROJECT_DIR$/newTest.iml" />
+      <module fileurl="file://C:\Users\TacoFighter\StudioProjects\newTest\app\app.iml" filepath="C:\Users\TacoFighter\StudioProjects\newTest\app\app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/newTest.iml" filepath="$PROJECT_DIR$/.idea/newTest.iml" />
+      <module fileurl="file://C:\Users\TacoFighter\StudioProjects\newTest\newTest.iml" filepath="C:\Users\TacoFighter\StudioProjects\newTest\newTest.iml" />
     </modules>
   </component>
 </project>
